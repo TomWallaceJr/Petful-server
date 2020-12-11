@@ -50,7 +50,7 @@ class Queue {
     if (!this.first === null) {
       return null;
     }
-    return this.first.next;
+    return this.first.value;
   }
 
 
@@ -58,9 +58,9 @@ class Queue {
     // Return all items in the queue.
     // puts each item from Q into an array one by one and returns array
     let arr = [];
-    let node = queue.first;
-    arr.push(node.value);
-    node = node.next;
+    let node = this.first;
+
+    // while there is a node, push node value to array and set current node to next node
     while (node) {
       arr.push(node.value);
       node = node.next;
