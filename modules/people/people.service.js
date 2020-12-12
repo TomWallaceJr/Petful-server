@@ -27,11 +27,13 @@ module.exports = {
   enqueue(person) {
     // Add a person to the queue.
     people.enqueue(person);
+    return { message: `${person} has been added to the queue!` }
   },
 
   dequeue() {
     // Remove a person from the queue.
     // WILL ALWAYS REMOVE FROM TOP OF QUEUE!!
     people.dequeue();
+    return { message: 'Success!' };
   }
 }
