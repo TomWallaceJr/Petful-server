@@ -39,7 +39,6 @@ module.exports = {
     return pets
   },
 
-  // Remove a pet from the queue.
   dequeue(type) {
     if (type === 'cat') {
       pets.cats.dequeue();

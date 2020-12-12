@@ -10,8 +10,15 @@ store.people.forEach(person => people.enqueue(person))
 // --------------------
 
 module.exports = {
-  get() {
+  getAll() {
     // Return all people in the queue.
+    peopleList = [];
+    node = people.first;
+    while (node) {
+      peopleList.push(node.value)
+      node = node.next
+    }
+    return peopleList;
   },
 
   enqueue(person) {

@@ -7,6 +7,16 @@ module.exports = {
 
   dogs: [
     {
+      imageURL: 'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+      imageDescription: 'A smiling golden-brown golden retreiver listening to music.',
+      name: 'Zeus',
+      sex: 'Male',
+      age: 3,
+      breed: 'Golden Retriever',
+      story: 'Owner Passed away'
+    },
+
+    {
       age: 3,
       breed: 'Golden Retriever',
       description: 'A smiling golden-brown golden retreiver listening to music.',
@@ -119,11 +129,21 @@ module.exports = {
 
   cats: [
     {
+      imageURL: 'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg',
+      imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
+      name: 'Fluffy',
+      sex: 'Female',
+      age: 2,
+      breed: 'Bengal',
+      story: 'Thrown on the street'
+    },
+
+    {
       age: 2,
       breed: 'Bengal',
       description: 'Orange bengal cat with black stripes lounging on concrete.',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Steve French',
       story: 'Thrown on the street'
     },
@@ -133,7 +153,7 @@ module.exports = {
       breed: 'white cat',
       description: 'White cat',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Snapjacks',
       story: 'Thrown on the street'
     },
@@ -143,7 +163,7 @@ module.exports = {
       breed: 'Bengal',
       description: 'Grey cat',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Grumpy-Face',
       story: 'Thrown on the street'
     },
@@ -153,7 +173,7 @@ module.exports = {
       breed: 'Bengal',
       description: 'Orange cat',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Garry Lazereyes',
       story: 'Thrown on the street'
     },
@@ -162,7 +182,7 @@ module.exports = {
       breed: 'Bengal',
       description: 'Grey cat',
       gender: 'Male',
-      imageURL:'https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Neapolitan Charlie',
       story: 'Thrown on the street'
     },
@@ -172,7 +192,7 @@ module.exports = {
       breed: 'Tabby',
       description: 'Orange bengal cat with black stripes lounging on concrete.',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Daisy',
       story: 'Thrown on the street'
     },
@@ -182,7 +202,7 @@ module.exports = {
       breed: 'Bengal',
       description: 'Brown kitty',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Stinkster',
       story: 'Thrown on the street'
     },
@@ -192,7 +212,7 @@ module.exports = {
       breed: 'Bengal',
       description: 'kitty',
       gender: 'Female',
-      imageURL:'https://images.pexels.com/photos/1276553/pexels-photo-1276553.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/1276553/pexels-photo-1276553.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Ner-Ner',
       story: 'Thrown on the street'
     },
@@ -202,7 +222,7 @@ module.exports = {
       breed: 'Tabby',
       description: 'grey cat',
       gender: 'Male',
-      imageURL:'https://images.pexels.com/photos/54632/cat-animal-eyes-grey-54632.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500', 
+      imageURL: 'https://images.pexels.com/photos/54632/cat-animal-eyes-grey-54632.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       name: 'Furrnando Valenzuela',
       story: 'Thrown on the street'
     },
@@ -212,7 +232,7 @@ module.exports = {
       breed: 'Tabby',
       description: 'grey cat',
       gender: 'Male',
-      imageURL:'https://images.pexels.com/photos/923360/pexels-photo-923360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+      imageURL: 'https://images.pexels.com/photos/923360/pexels-photo-923360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Spike',
       story: 'Thrown on the street',
     },
