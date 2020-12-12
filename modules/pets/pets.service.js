@@ -36,7 +36,11 @@ module.exports = {
 
   // returns all pets
   getAll() {
-    return pets
+    let petsList = {
+      dogs: pets.dogs.all(),
+      cats: pets.cats.all()
+    }
+    return petsList;
   },
 
   dequeue(type) {

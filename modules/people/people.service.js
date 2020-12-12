@@ -12,20 +12,26 @@ store.people.forEach(person => people.enqueue(person))
 module.exports = {
   getAll() {
     // Return all people in the queue.
-    peopleList = [];
-    node = people.first;
-    while (node) {
-      peopleList.push(node.value)
-      node = node.next
-    }
-    return peopleList;
+    // did it this long way and then realized its easier lol
+    // let peopleList = [];
+    // node = people.first;
+    // while (node) {
+    //   peopleList.push(node.value)
+    //   node = node.next
+    // }
+    // return peopleList;
+
+    return people.all()
   },
 
   enqueue(person) {
     // Add a person to the queue.
+    people.enqueue(person);
   },
 
   dequeue() {
     // Remove a person from the queue.
+    // WILL ALWAYS REMOVE FROM TOP OF QUEUE!!
+    people.dequeue();
   }
 }
