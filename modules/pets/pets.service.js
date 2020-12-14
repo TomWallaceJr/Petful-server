@@ -35,12 +35,15 @@ module.exports = {
   },
 
   // returns all pets
-  getAll() {
-    let petsList = {
-      dogs: pets.dogs.all(),
-      cats: pets.cats.all()
+  getAll(type) {
+    if (type === 'cats') {
+      return pets.cats.all()
+    } else if (type === 'dogs') {
+      return pets.dogs.all()
     }
-    return petsList;
+    else {
+      throw error('Something went wrong!')
+    }
   },
 
   dequeue(type) {

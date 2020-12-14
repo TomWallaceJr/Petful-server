@@ -9,31 +9,32 @@ const router = express.Router()
 
 
 // get next cat available
-router.get('/api/cats', (req, res) => {
+router.get('/api/nextcat', (req, res) => {
   return res.json(Pets.getNext('cat'))
 })
 
 // get next dog available
-router.get('/api/dogs', (req, res) => {
+router.get('/api/nextdog', (req, res) => {
   return res.json(Pets.getNext('dog'))
 })
 
-router.delete('/api/cats', json, (req, res) => {
+router.delete('/api/removecat', json, (req, res) => {
   // Remove a pet from adoption.
   return res.json(Pets.dequeue('cat'))
 })
 
-router.delete('/api/dogs', json, (req, res) => {
+router.delete('/api/removedog', json, (req, res) => {
   // Remove a pet from adoption.
   return res.json(Pets.dequeue('dog'))
 })
 
-// TEST ..... INSTEAD OF HAVING SEPERATE ENDPOINTS FOR CATS AND DOGS, TAKE IN
-// A TYPE FROM REQUEST OF 'CAT OR DOG AND SEND TYPE TO SERVICE OBJECT METHODS
-// AS A VARIABLE
-// I WILL TRY THIS ONCE ASSINGMNET COMPLETE
-router.delete('/', json, (req, res) => {
-  // Remove a pet from adoption.
+
+router.get('/api/getallcats', (req, res) => {
+  return res.json(Pets.getAll('cats'))
+})
+
+router.get('/api/getalldogs', (req, res) => {
+  return res.json(Pets.getAll('dogs'))
 })
 
 router.get('/', (req, res) => {
