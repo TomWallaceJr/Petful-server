@@ -42,19 +42,19 @@ module.exports = {
       return pets.dogs.all()
     }
     else {
-      throw error('Something went wrong!')
+      throw error('Something went wrong!');
     }
   },
 
   dequeue(type) {
     if (type === 'cat') {
       pets.cats.dequeue();
-      return { message: 'Success' };
+      return pets.cats.all();
     }
     if (type === 'dog') {
       pets.dogs.dequeue();
-      return { message: 'Success' };
+      return pets.dogs.all();
     }
     throw error('Something went wrong please try again');
   }
-}
+};

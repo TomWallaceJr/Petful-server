@@ -21,7 +21,7 @@ module.exports = {
     // }
     // return peopleList;
 
-    return people.all()
+    return people.all(people)
   },
 
   enqueue(person) {
@@ -34,6 +34,6 @@ module.exports = {
     // Remove a person from the queue.
     // WILL ALWAYS REMOVE FROM TOP OF QUEUE!!
     people.dequeue();
-    return { message: 'Success!' };
+    return people.all(people);
   }
 }
