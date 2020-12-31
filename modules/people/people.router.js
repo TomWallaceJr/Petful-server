@@ -15,15 +15,9 @@ router
   // Add a new person to the queue.
   .post(jsonParser, (req, res) => {
     const { name } = req.body;
-    if (!name) {
-      return res.status(400).json({
-        error: { message: 'Missing Name!' }
-      })
-    }
-
     People.enqueue(name);
     res.status(201)
-      .json(People.get())
+      .json(People.getAll())
   })
   // WILL ALWAYS REMOVE FROM TOP OF QUEUE!!
   .delete((req, res) => {
