@@ -26,13 +26,13 @@ module.exports = {
 
   enqueue(person) {
     // Add a person to the queue.
-    people.enqueue(person);
+    return people.enqueue(person);
   },
 
   dequeue() {
     // Remove a person from the queue.
     // WILL ALWAYS REMOVE FROM TOP OF QUEUE!!
     people.dequeue();
-    return people.all(people);
+    return people.all();
   }
 }

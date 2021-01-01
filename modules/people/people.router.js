@@ -21,8 +21,8 @@ router
   })
   // WILL ALWAYS REMOVE FROM TOP OF QUEUE!!
   .delete((req, res) => {
-    People.dequeue();
-    res.status(204).end()
+    //People.dequeue();
+    res.json(People.dequeue());
   })
 
 

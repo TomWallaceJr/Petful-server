@@ -20,13 +20,13 @@ router.get('/api/nextdog', (req, res) => {
 
 router.delete('/api/removecat', json, (req, res) => {
   // Remove a pet from adoption.
-  People.dequeue();
+  //People.dequeue();
   res.json(Pets.dequeue('cat'));
 });
 
 router.delete('/api/removedog', json, (req, res) => {
   // Remove a pet from adoption.
-  People.dequeue();
+  // People.dequeue();
   res.json(Pets.dequeue('dog'));
 });
 
