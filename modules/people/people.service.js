@@ -11,16 +11,6 @@ store.people.forEach(person => people.enqueue(person))
 
 module.exports = {
   getAll() {
-    // Return all people in the queue.
-    // did it this long way and then realized its easier lol
-    // let peopleList = [];
-    // node = people.first;
-    // while (node) {
-    //   peopleList.push(node.value)
-    //   node = node.next
-    // }
-    // return peopleList;
-
     return people.all(people)
   },
 

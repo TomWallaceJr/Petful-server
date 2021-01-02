@@ -24,22 +24,17 @@ class Queue {
     if (this.last) {
       this.last.next = node;
     }
-    //make the new node the last item on the queue
     this.last = node;
     return node.value;
   }
 
   dequeue() {
-    // Remove some data from the queue.
-    // We only remove from one place in the q (the beginning)
-    // if the queue is empty, there is nothing to return
     if (this.first === null) {
       return;
     }
     const node = this.first;
     this.first = this.first.next;
 
-    //if this is the last item in the queue
     if (node === this.last) {
       this.last = null;
     }

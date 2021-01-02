@@ -8,16 +8,6 @@ const router = express.Router()
 
 
 
-// get next cat available
-router.get('/api/nextcat', (req, res) => {
-  res.json(Pets.getNext('cat'));
-});
-
-// get next dog available
-router.get('/api/nextdog', (req, res) => {
-  res.json(Pets.getNext('dog'));
-});
-
 router.delete('/api/removecat', json, (req, res) => {
   // Remove a pet from adoption.
   //People.dequeue();
